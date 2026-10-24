@@ -1431,6 +1431,123 @@
    "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
   },
   {
+   "file": "item_ojo.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Ojo vigía",
+   "rim": "#ffd040",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_centinela.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Ojo centinela",
+   "rim": "#60c0ff",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_diente.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Diente de dragón",
+   "rim": "#ff8a3a",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_martillo.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Martillo del trueno",
+   "rim": "#7ad0ff",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_mazo.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Mazo aturdidor",
+   "rim": "#c0a080",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_brasero.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Brasero solar",
+   "rim": "#ffc040",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_mascara.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Máscara de furia",
+   "rim": "#e05a3a",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_caliz.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Cáliz carmesí",
+   "rim": "#c02040",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_guadana.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Guadaña del brujo",
+   "rim": "#9a6aff",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_renovacion.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Orbe de renovación",
+   "rim": "#70f0c0",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_espejo.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Espejo lunar",
+   "rim": "#c8e0ff",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_piel_dragon.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Piel de dragón",
+   "rim": "#e0b040",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "item_baston_empuje.png",
+   "w": 64,
+   "h": 64,
+   "kind": "icon",
+   "name": "Bastón de empuje",
+   "rim": "#a0e0a0",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
    "file": "rune_haste.png",
    "w": 64,
    "h": 64,
