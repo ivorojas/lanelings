@@ -2399,6 +2399,81 @@
    "name": "gold",
    "rim": "#ffc83a",
    "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "cabra_Q.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Fuegos fatuos",
+   "rim": "#e0603a",
+   "hero": "Llamador de bestias",
+   "motif": "fuegos_espiritu",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "cabra_W.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Gemelos de piedra",
+   "rim": "#e0603a",
+   "hero": "Llamador de bestias",
+   "motif": "gemelos_piedra",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "cabra_E.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Enjambre de langostas",
+   "rim": "#e0603a",
+   "hero": "Llamador de bestias",
+   "motif": "langostas",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "cabra_R.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Behemot ancestral",
+   "rim": "#ffc83a",
+   "hero": "Llamador de bestias",
+   "motif": "behemoth",
+   "category": "ult",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "cabra_P.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Wild Bond",
+   "rim": "#3cc8b0",
+   "hero": "Beastcaller",
+   "motif": "lazo_salvaje",
+   "category": "pasiva",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "cabra_portrait.png",
+   "w": 70,
+   "h": 70,
+   "kind": "icon",
+   "name": "Beastcaller portrait",
+   "rim": "#e2bb64",
+   "hero": "Beastcaller",
+   "css": "width: 70px; height: 70px; image-rendering: pixelated;  /* va en el hueco de portrait_frame (48,48 r35) */"
   }
  ]
 }
