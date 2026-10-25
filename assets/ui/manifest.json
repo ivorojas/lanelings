@@ -2474,6 +2474,81 @@
    "rim": "#e2bb64",
    "hero": "Beastcaller",
    "css": "width: 70px; height: 70px; image-rendering: pixelated;  /* va en el hueco de portrait_frame (48,48 r35) */"
+  },
+  {
+   "file": "glitch_Q.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Copiar y pegar",
+   "rim": "#e0603a",
+   "hero": "Glitch",
+   "motif": "copiar_pegar",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "glitch_W.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Fragmentar",
+   "rim": "#e0603a",
+   "hero": "Glitch",
+   "motif": "fragmento",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "glitch_E.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Duplicar",
+   "rim": "#e0603a",
+   "hero": "Glitch",
+   "motif": "duplicar",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "glitch_R.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Borrar",
+   "rim": "#ffc83a",
+   "hero": "Glitch",
+   "motif": "borrar",
+   "category": "ult",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "glitch_P.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "No-clip",
+   "rim": "#3cc8b0",
+   "hero": "Glitch",
+   "motif": "noclip",
+   "category": "pasiva",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "glitch_portrait.png",
+   "w": 70,
+   "h": 70,
+   "kind": "icon",
+   "name": "Glitch portrait",
+   "rim": "#e2bb64",
+   "hero": "Glitch",
+   "css": "width: 70px; height: 70px; image-rendering: pixelated;  /* va en el hueco de portrait_frame (48,48 r35) */"
   }
  ]
 }
