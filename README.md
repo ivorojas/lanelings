@@ -1,5 +1,7 @@
 # Lanelings
 
-Arena chibi 5 contra 5 en el navegador (2.5D pixel art).
+MOBA 5 contra 5 en el navegador (2.5D pixel art).
 
-Jugar: https://ivorojas.github.io/lanelings/
+- Sitio: https://lanelings.com/
+- Jugar: https://lanelings.com/play/
+- App de Windows: https://github.com/ivorojas/lanelings/releases/latest
