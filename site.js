@@ -20,7 +20,7 @@
   var fmt = function (s, o) { return String(s).replace(/\{(\w)\}/g, function (m, k) { return o[k] != null ? o[k] : m; }); };
 
   // ---- idioma: el elegido se recuerda y el juego abre en el mismo idioma (misma pagina: lanelings.com)
-  $$('.lang-opt, .foot-links a[hreflang]').forEach(function (a) {
+  $$('.lang-opt').forEach(function (a) {
     a.addEventListener('click', function () { var l = a.getAttribute('hreflang'); store.set('lanelings_site_lang', l); store.set('moba_lang', l); });
   });
 
@@ -152,7 +152,7 @@
     });
   });
 
-  // ---- app de Windows: version y tamaño de la ultima version (GitHub), guardado un rato
+  // ---- app de Windows: version y tamaño de la ultima version (datos de la publicacion), guardado un rato
   var meta = $('#dlMeta');
   function showRel(r) {
     if (!r || !meta) return;
@@ -176,7 +176,7 @@
 
   // ---- redes (ocultas hasta tener link)
   var any = false;
-  [['discord', '#lnkDiscord'], ['tiktok', '#lnkTiktok']].forEach(function (p) {
+  [['discord', '#lnkDiscord'], ['discord', '#heroDiscord'], ['discord', '#footDiscord'], ['tiktok', '#lnkTiktok'], ['tiktok', '#footTiktok']].forEach(function (p) {
     var el = $(p[1]); if (el && LINKS[p[0]]) { el.href = LINKS[p[0]]; el.hidden = false; any = true; }
   });
   if (any) { $('#comunidad').hidden = false; $$('.js-com').forEach(function (a) { a.hidden = false; }); }
