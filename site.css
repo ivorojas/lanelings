@@ -7,7 +7,7 @@
   --text: #f3e6c4; --muted: #b3a385; --dim: #7a7088;
   --blue: #4aa8ff; --red: #ff5a4a; --green: #5ad46a;
   --f-title: 'Cinzel', Georgia, 'Times New Roman', serif;
-  --f-num: 'Pixelify Sans', 'Courier New', monospace;
+  --f-num: 'Rubik', 'Segoe UI', sans-serif;   /* v9.45: antes Pixelify Sans (no se leia bien: 8 y S, codigos de sala) */
   --f-body: 'Nunito', 'Segoe UI', system-ui, sans-serif;
   --wrap: 1180px; --gut: 16px;
   --sh-txt: 0 1px 0 #000, 0 0 6px rgba(0, 0, 0, .8);
