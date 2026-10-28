@@ -5,7 +5,7 @@
 (function () {
   'use strict';
   // ---- redes: se muestran solo cuando hay link (pegar aca la invitacion de Discord y el perfil de TikTok)
-  var LINKS = { discord: '', tiktok: '' };
+  var LINKS = { discord: '', tiktok: 'https://www.tiktok.com/@lanelings' };
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };

@@ -2963,6 +2963,81 @@
    "category": "pasiva",
    "design": "diseno",
    "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "tollwarden_Q.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Tañido",
+   "rim": "#e0603a",
+   "hero": "Tollwarden",
+   "motif": "tw_tanido",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "tollwarden_W.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Péndulo",
+   "rim": "#e0603a",
+   "hero": "Tollwarden",
+   "motif": "tw_pendulo",
+   "category": "dano",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "tollwarden_E.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Bajo la campana",
+   "rim": "#5a9ae0",
+   "hero": "Tollwarden",
+   "motif": "tw_bajo_campana",
+   "category": "def",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "tollwarden_R.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "La hora quieta",
+   "rim": "#ffc83a",
+   "hero": "Tollwarden",
+   "motif": "tw_hora_quieta",
+   "category": "ult",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "tollwarden_P.png",
+   "w": 64,
+   "h": 64,
+   "kind": "ability",
+   "name": "Second Toll",
+   "rim": "#3cc8b0",
+   "hero": "Tollwarden",
+   "motif": "tw_segundo_tanido",
+   "category": "pasiva",
+   "design": "diseno",
+   "css": "width: 64px; height: 64px; image-rendering: pixelated;  /* 1x; 128px para 2x */"
+  },
+  {
+   "file": "tollwarden_portrait.png",
+   "w": 70,
+   "h": 70,
+   "kind": "icon",
+   "name": "Tollwarden portrait",
+   "rim": "#e2bb64",
+   "hero": "Tollwarden",
+   "css": "width: 70px; height: 70px; image-rendering: pixelated;  /* va en el hueco de portrait_frame (48,48 r35) */"
   }
  ]
 }
