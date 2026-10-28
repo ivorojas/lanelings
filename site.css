@@ -240,7 +240,8 @@ a { color: var(--gold-2); }
   .features { grid-template-columns: 1fr; gap: 16px; }
   .honest { flex-direction: column; text-align: center; padding: 26px 18px 20px; }
   .hero-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; }
-  .hcard { min-height: 150px; }
+  .hcard { min-height: 150px; padding-left: 2px; padding-right: 2px; }
+  .hname { font-size: min(13px, 3.4vw); overflow-wrap: anywhere; }   /* nombres largos (Chronoguard) entran en 3 columnas */
   .hcard .spr { zoom: .75; }
   .fh-stage { height: 270px; }
   .abil { gap: 8px; } .ab, .ab img { width: 56px; height: 56px; }

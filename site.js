@@ -16,6 +16,32 @@
     get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) { /* modo privado */ } }
   };
+  // ---- de donde vienen (anuncios): utm_* del link se guarda (lo lee el juego para su registro) y se avisa
+  //      la visita y los clics importantes al mismo lugar que los registros de partidas. Id anonimo, sin IP.
+  var TRK = 'https://lanelings-brain.netlify.app/.netlify/functions/logs';
+  var pid = store.get('lanelings_pid');
+  if (!pid || !/^[a-z0-9]{6,16}$/.test(pid)) { pid = Math.random().toString(36).slice(2, 8) + Math.random().toString(36).slice(2, 6); store.set('lanelings_pid', pid); }
+  var utm = null;
+  try {
+    var q = new URLSearchParams(location.search);
+    if (q.get('utm_source')) { utm = { s: q.get('utm_source'), m: q.get('utm_medium') || '', c: q.get('utm_campaign') || '', ct: q.get('utm_content') || '', t: new Date().toISOString() }; store.set('lanelings_utm', JSON.stringify(utm)); }
+    else utm = JSON.parse(store.get('lanelings_utm') || 'null');
+  } catch (e) { /* sin utm */ }
+  var visit = Math.random().toString(36).slice(2, 10);
+  var track = function (kind) {
+    try {
+      var meta = { player: pid, kind: kind, build: 'web', mode: utm ? utm.s : 'directo', hero: utm ? utm.c : '', session: 'web-' + visit, desktop: false };
+      var body = JSON.stringify(['META', meta]) + '\n' + JSON.stringify(['V', { kind: kind, utm: utm, lang: L, path: location.pathname, ref: document.referrer.slice(0, 120), phone: /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || ''), w: screen.width, h: screen.height }]) + '\n';
+      if (navigator.sendBeacon) navigator.sendBeacon(TRK, new Blob([body], { type: 'text/plain' }));
+    } catch (e) { /* nada */ }
+  };
+  track('visita');
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('.js-play, #dlBtn, [data-a="share"], [data-a="copy"]') : null;
+    if (!el) return;
+    track(el.id === 'dlBtn' ? 'descarga' : el.getAttribute('data-a') ? 'movil_link' : 'jugar');
+  }, true);
+
   var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
   var fmt = function (s, o) { return String(s).replace(/\{(\w)\}/g, function (m, k) { return o[k] != null ? o[k] : m; }); };
 
@@ -60,7 +86,8 @@
     });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
     var block = function (el) { el.addEventListener('click', function (e) { e.preventDefault(); e.stopImmediatePropagation(); dlg.hidden = false; }, true); };
-    $$('.js-play, a[href="#descargar"], #dlBtn').forEach(block);
+    // solo las acciones (jugar / bajar el .exe): los links del menu y del pie a #descargar siguen llevando a la seccion
+    $$('.js-play, .hero-cta a[href="#descargar"], #dlBtn').forEach(block);
     $$('.js-play .btn-main').forEach(function (s) { s.textContent = T.pcBtn; });
     $$('.js-play.btn-sm').forEach(function (s) { s.textContent = T.pcBtn; });
     var dlb = $('#dlBtn'); if (dlb) dlb.lastChild.textContent = T.pcDl;
